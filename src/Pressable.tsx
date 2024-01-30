@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import chroma from 'chroma-js';
 import { Color, usePaletteColor } from './hooks/use-palette-color';
+import getNativeDriverDefault from './utils/getNativeDriverDefault';
 
 export interface PressableProps extends RNPressableProps {
   pressEffect?: 'none' | 'highlight' | 'ripple' | 'android-ripple';
@@ -86,7 +87,7 @@ const Pressable: React.FC<PressableProps> = ({
           ),
           easing: Easing.out(Easing.ease),
           duration: 400,
-          useNativeDriver: false,
+          useNativeDriver: getNativeDriverDefault(),
         }).start();
       }
     },
@@ -103,7 +104,7 @@ const Pressable: React.FC<PressableProps> = ({
           toValue: 0,
           easing: Easing.out(Easing.ease),
           duration: 400,
-          useNativeDriver: false,
+          useNativeDriver: getNativeDriverDefault(),
         }).start(() => {
           setRipples((prevState) => prevState.slice(1));
         });

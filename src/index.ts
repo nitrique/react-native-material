@@ -1,30 +1,4 @@
 export * from 'react-native-flex-layout';
-import {
-  Provider as WindowSizeProvider,
-  ProviderProps as WindowSizeProviderProps,
-  Breakpoint,
-  WindowSize,
-  ActiveBreakpointContext,
-  useWindowSize,
-  BreakpointsContext,
-  useActiveBreakpoint,
-  useBreakpoints,
-  Breakpoints,
-} from 'react-native-window-size';
-
-export {
-  WindowSizeProvider,
-  WindowSizeProviderProps,
-  Breakpoint,
-  WindowSize,
-  ActiveBreakpointContext,
-  useWindowSize,
-  BreakpointsContext,
-  useActiveBreakpoint,
-  useBreakpoints,
-  Breakpoints,
-};
-
 export * from './base/defaultTheme';
 export * from './base/IconComponentContext';
 export * from './base/PortalContext';

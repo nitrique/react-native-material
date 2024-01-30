@@ -3,6 +3,7 @@ import { Animated, StyleProp, TextStyle, ViewProps } from 'react-native';
 import Text from './Text';
 import { Color, usePaletteColor } from './hooks/use-palette-color';
 import { useStyles } from './hooks/use-styles';
+import getNativeDriverDefault from './utils/getNativeDriverDefault';
 
 export interface BadgeProps {
   label?: number | string | React.ReactElement | ((props: { color: string }) => React.ReactElement | null) | null;
@@ -58,7 +59,7 @@ const Badge: React.FC<BadgeProps> = ({
     Animated.timing(animated, {
       toValue: isVisible ? 1 : 0,
       duration: 200,
-      useNativeDriver: false,
+      useNativeDriver: getNativeDriverDefault(),
     }).start();
   }, [isVisible]);
 

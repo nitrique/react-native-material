@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Animated, StyleProp, useWindowDimensions, View, ViewProps, ViewStyle } from 'react-native';
 import Surface from './Surface';
 import { useStyles } from './hooks/use-styles';
+import getNativeDriverDefault from './utils/getNativeDriverDefault';
 
 export interface BackdropProps {
   revealed?: boolean;
@@ -74,7 +75,7 @@ const Backdrop: React.FC<BackdropProps> = ({
     Animated.timing(animated, {
       toValue: revealed ? 1 : 0,
       duration: 300,
-      useNativeDriver: false,
+      useNativeDriver: getNativeDriverDefault(),
     }).start();
   }, [revealed]);
 
