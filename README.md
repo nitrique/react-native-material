@@ -1,21 +1,15 @@
-## ⚠️ Maintenance & support
+# Material UI components for React Native [![Twitter Follow](https://img.shields.io/twitter/follow/nitrique?style=social)](https://twitter.com/intent/user?screen_name=nitrique)
 
-I am currently unable to actively maintain this library. While I continue to use it in my projects, I am facing time constraints that prevent me from dedicating proper attention to its maintenance.
-
-Please understand that I may not be able to address issues, implement new features, or release updates at this time. However, I intend to resume maintenance as soon as I find the necessary resources.
-
----
-
-# Material UI components for React Native [![Twitter Follow](https://img.shields.io/twitter/follow/yamankatby?style=social)](https://twitter.com/intent/user?screen_name=yamankatby)
+Original work belong to Yaman KATBY.
 
 > React Native Material is a set of pre-built, cross-platform, highly customizable UI components that follow Material Design principles.
 
-[![Latest Stable Version](https://img.shields.io/npm/v/@react-native-material/core.svg)](https://www.npmjs.com/package/@react-native-material/core)
-[![NPM Downloads](https://img.shields.io/npm/dm/@react-native-material/core.svg)](https://www.npmjs.com/package/@react-native-material/core)
-[![GitHub issues](https://img.shields.io/github/issues-raw/yamankatby/react-native-material.svg)](https://github.com/yamankatby/react-native-material/issues)
-[![Used Languages](https://img.shields.io/github/languages/top/yamankatby/react-native-material.svg)](https://github.com/yamankatby/react-native-material)
+[![Latest Stable Version](https://img.shields.io/npm/v/@react-native-material/core.svg)](https://www.npmjs.com/package/@nitrique/react-native-material)
+[![NPM Downloads](https://img.shields.io/npm/dm/@react-native-material/core.svg)](https://www.npmjs.com/package/@nitrique/react-native-material)
+[![GitHub issues](https://img.shields.io/github/issues-raw/nitrique/react-native-material.svg)](https://github.com/nitrique/react-native-material/issues)
+[![Used Languages](https://img.shields.io/github/languages/top/nitrique/react-native-material.svg)](https://github.com/nitrique/react-native-material)
 
-![App bar](https://raw.githubusercontent.com/yamankatby/react-native-material/main/hero.png)
+![App bar](https://raw.githubusercontent.com/nitrique/react-native-material/main/hero.png)
 
 Loved the project? Please share it with your friends and give it a ⭐️
 
@@ -23,7 +17,7 @@ Loved the project? Please share it with your friends and give it a ⭐️
 
 Take a look at our example apps:
 
-- [💨 Expo Snack](https://snack.expo.dev/@yamankatby/react-native-material-explorer)
+- [💨 Expo Snack](https://snack.expo.dev/@nitrique/react-native-material-explorer)
 - [🤖 Android](https://play.google.com/store/apps/details?id=com.swazer.material)
 - [🌍 Web](https://example.rn-material.js.org/)
 
@@ -36,11 +30,11 @@ Download Expo Go app on your device and scan this QR code to get started.
 
 > Expo Go for iOS does not include a QR code scanner [learn more](https://blog.expo.dev/upcoming-limitations-to-ios-expo-client-8076d01aee1a). So you have to scan the code using the regular camera app.
 
-![Expo Go QR code](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/qr.png)
+![Expo Go QR code](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/qr.png)
 
 ### Run the Example app locally
 
-Run the [example app](https://github.com/yamankatby/react-native-material/tree/main/example) with Expo to see it in
+Run the [example app](https://github.com/nitrique/react-native-material/tree/main/example) with Expo to see it in
 action. The source code is located under the `/example` folder.
 
 ## ⬇️ Installation
@@ -76,11 +70,11 @@ export default function App() {
 
 The App bars display information and actions relating to the current screen.
 
-![App bar](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/app-bar.png)
+![App bar](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/app-bar.png)
 
-![Prominent App bar](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/prominent-app-bar.png)
+![Prominent App bar](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/prominent-app-bar.png)
 
-![Bottom App bar](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/bottom-app-bar.png)
+![Bottom App bar](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/bottom-app-bar.png)
 
 ### `<Avatar />`
 
@@ -88,7 +82,7 @@ The App bars display information and actions relating to the current screen.
 
 Avatars are found throughout material design with uses in everything from tables to dialog menus.
 
-![Avatar](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/avatar.png)
+![Avatar](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/avatar.png)
 
 ### `<Backdrop />`
 
@@ -96,7 +90,7 @@ Avatars are found throughout material design with uses in everything from tables
 
 A backdrop appears behind all other surfaces in an app, displaying contextual and actionable content.
 
-![Backdrop](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/backdrop.png)
+![Backdrop](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/backdrop.png)
 
 ### `<Badge />`
 
@@ -104,7 +98,7 @@ A backdrop appears behind all other surfaces in an app, displaying contextual an
 
 A Badge represents dynamic information such as several pending requests in a Bottom Navigation or Tab Bar.
 
-![Badge](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/badge.png)
+![Badge](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/badge.png)
 
 ### `<Banner />`
 
@@ -112,7 +106,7 @@ A Badge represents dynamic information such as several pending requests in a Bot
 
 A banner displays a prominent message and related optional actions.
 
-![Banner](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/banner.png)
+![Banner](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/banner.png)
 
 ### `<Button />`
 
@@ -120,7 +114,7 @@ A banner displays a prominent message and related optional actions.
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-![Button](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/button.png)
+![Button](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/button.png)
 
 ### `<Divider />`
 
@@ -134,7 +128,7 @@ A divider is a thin line that groups content in lists and layouts.
 
 A floating action button (FAB) represents the primary action of a screen.
 
-![Floating Action Button](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/fab.png)
+![Floating Action Button](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/fab.png)
 
 ### `<Surface />`
 
@@ -143,7 +137,7 @@ A floating action button (FAB) represents the primary action of a screen.
 Material surfaces can be displayed in different shapes. Shapes direct attention, identify components, communicate state,
 and express brand.
 
-![Surface](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/surface.png)
+![Surface](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/surface.png)
 
 ### `<Typography />`
 
@@ -151,7 +145,7 @@ and express brand.
 
 Use typography to present your design and content as clearly and efficiently as possible.
 
-![Typography](https://raw.githubusercontent.com/yamankatby/react-native-material/main/images/typography.png)
+![Typography](https://raw.githubusercontent.com/nitrique/react-native-material/main/images/typography.png)
 
 ## 👍 Community
 
@@ -168,20 +162,20 @@ frequented, from time to time, by the maintainers of **React Native Material**.
 
 **React Native Material** uses GitHub issues as a bug and feature request tracker. If you think you have found a bug, or
 have a new feature idea, please start by making sure it hasn't already
-been [reported or fixed](https://github.com/yamankatby/react-native-material/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aclosed)
+been [reported or fixed](https://github.com/nitrique/react-native-material/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aclosed)
 . You can search through existing issues and pull requests to see if someone has reported one similar to yours.
 
-[Open an issue](https://github.com/yamankatby/react-native-material/issues/new/choose)
+[Open an issue](https://github.com/nitrique/react-native-material/issues/new/choose)
 
 ## 🤝 Contributing
 
-Please take a look at [Kanban](https://github.com/yamankatby/react-native-material/projects/1) where we have a roadmap
+Please take a look at [Kanban](https://github.com/nitrique/react-native-material/projects/1) where we have a roadmap
 for **React Native Material** community. Also, we have a list
-of [good first issues](https://github.com/yamankatby/react-native-material/labels/good%20first%20issue) that contain
+of [good first issues](https://github.com/nitrique/react-native-material/labels/good%20first%20issue) that contain
 bugs that have a relatively limited scope. This is a great place to get started, gain experience, and get familiar with
 our contribution process.
 
 ## 📝 License
 
 This library is licensed under the MIT License - see
-the [LICENSE](https://github.com/yamankatby/react-native-material/blob/main/LICENSE) file for details.
+the [LICENSE](https://github.com/nitrique/react-native-material/blob/main/LICENSE) file for details.
