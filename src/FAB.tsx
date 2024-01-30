@@ -7,6 +7,7 @@ import ActivityIndicator from './ActivityIndicator';
 import { Color, usePaletteColor } from './hooks/use-palette-color';
 import { useStyles } from './hooks/use-styles';
 import { useAnimatedElevation } from './hooks/use-animated-elevation';
+import getNativeDriverDefault from './utils/getNativeDriverDefault';
 
 export interface FABProps extends Omit<SurfaceProps, 'hitSlop'>, Omit<PressableProps, 'style' | 'children'> {
   icon?: React.ReactElement | ((props: { color: string; size: number }) => React.ReactElement | null) | null;
@@ -140,7 +141,7 @@ const FAB: React.FC<FABProps> = ({
     Animated.timing(animated, {
       toValue: visible ? 1 : 0,
       duration: 200,
-      useNativeDriver: false,
+      useNativeDriver: getNativeDriverDefault(),
     }).start();
   }, [visible]);
 

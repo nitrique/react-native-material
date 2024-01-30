@@ -1,7 +1,8 @@
-import React, {ReactNode, useEffect, useMemo, useState} from 'react';
+import React, { ReactNode, useEffect, useMemo, useState } from 'react';
 import { Animated, Easing, Platform, StyleSheet, TouchableWithoutFeedback } from 'react-native';
 import { Portal } from './base/PortalContext';
-import Surface, {SurfaceProps} from './Surface';
+import Surface, { SurfaceProps } from './Surface';
+import getNativeDriverDefault from './utils/getNativeDriverDefault';
 
 export interface DialogProps {
   visible?: boolean;
@@ -25,7 +26,7 @@ const Dialog: React.FC<DialogProps> = ({ visible = false, onDismiss, surfaceStyl
       toValue: visible ? 1 : 0,
       duration: 225,
       easing: Easing.out(Easing.cubic),
-      useNativeDriver: false,
+      useNativeDriver: getNativeDriverDefault(),
     }).start(() => {
       if (!visible) setPortalVisible(false);
     });

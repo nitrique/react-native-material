@@ -17,6 +17,7 @@ import { Color, usePaletteColor } from './hooks/use-palette-color';
 import { useTheme } from './base/ThemeContext';
 import { useSurfaceScale } from './hooks/use-surface-scale';
 import { useStyles } from './hooks/use-styles';
+import getNativeDriverDefault from './utils/getNativeDriverDefault';
 
 export interface TextInputProps extends RNTextInputProps {
   /**
@@ -173,7 +174,7 @@ const TextInput: React.FC<TextInputProps> = React.forwardRef(
         toValue: focused ? 1 : 0,
         duration: 200,
         easing: Easing.out(Easing.ease),
-        useNativeDriver: false,
+        useNativeDriver: getNativeDriverDefault(),
       }).start();
     }, [focused]);
 
@@ -186,7 +187,7 @@ const TextInput: React.FC<TextInputProps> = React.forwardRef(
         toValue: active ? 1 : 0,
         duration: 200,
         easing: Easing.out(Easing.ease),
-        useNativeDriver: false,
+        useNativeDriver: getNativeDriverDefault(),
       }).start();
     }, [active]);
 

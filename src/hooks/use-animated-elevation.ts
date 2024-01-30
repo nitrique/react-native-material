@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { Animated, Platform, StyleProp, ViewStyle } from 'react-native';
 import { Elevation, useTheme } from '../base/ThemeContext';
+import getNativeDriverDefault from '../utils/getNativeDriverDefault';
 
 const inputRange = Array.from(Array(25).keys());
 
@@ -12,7 +13,7 @@ export const useAnimatedElevation = (elevation: Elevation): StyleProp<ViewStyle>
     Animated.timing(animated, {
       toValue: elevation,
       duration: 200,
-      useNativeDriver: false,
+      useNativeDriver: getNativeDriverDefault(),
     }).start();
   }, [elevation]);
 
