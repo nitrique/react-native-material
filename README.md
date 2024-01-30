@@ -4,8 +4,8 @@ Original work belong to Yaman KATBY.
 
 > React Native Material is a set of pre-built, cross-platform, highly customizable UI components that follow Material Design principles.
 
-[![Latest Stable Version](https://img.shields.io/npm/v/@react-native-material/core.svg)](https://www.npmjs.com/package/@nitrique/react-native-material)
-[![NPM Downloads](https://img.shields.io/npm/dm/@react-native-material/core.svg)](https://www.npmjs.com/package/@nitrique/react-native-material)
+[![Latest Stable Version](https://img.shields.io/npm/v/@nitrique/react-native-material.svg)](https://www.npmjs.com/package/@nitrique/react-native-material)
+[![NPM Downloads](https://img.shields.io/npm/dm/@nitrique/react-native-material.svg)](https://www.npmjs.com/package/@nitrique/react-native-material)
 [![GitHub issues](https://img.shields.io/github/issues-raw/nitrique/react-native-material.svg)](https://github.com/nitrique/react-native-material/issues)
 [![Used Languages](https://img.shields.io/github/languages/top/nitrique/react-native-material.svg)](https://github.com/nitrique/react-native-material)
 
@@ -40,13 +40,13 @@ action. The source code is located under the `/example` folder.
 ## ⬇️ Installation
 
 ```shell
-npm install @react-native-material/core
+npm install @nitrique/react-native-material
 ```
 
 Or (If you're using yarn):
 
 ```shell
-yarn add @react-native-material/core
+yarn add @nitrique/react-native-material
 ```
 
 ## 🚀 Quick Start
@@ -55,7 +55,7 @@ Here's a quick example to get you started, it's **literally all you need**:
 
 ```js
 import React from "react";
-import { Button } from "@react-native-material/core";
+import { Button } from "@nitrique/react-native-material";
 
 export default function App() {
   return <Button title="Button" onPress={() => alert("hi!")} />;
