@@ -328,10 +328,7 @@ const TextInput: React.FC<TextInputProps> = React.forwardRef(
                       inputRange: [0, 1],
                       outputRange: [surfaceScale(0.87).hex(), palette.main],
                     }),
-                    fontSize: activeAnimation.interpolate({
-                      inputRange: [0, 1],
-                      outputRange: [theme.typography.subtitle1.fontSize ?? 16, 12],
-                    }),
+                    fontSize: active ? 12 : 16,
                     transform: [
                       {
                         translateY: activeAnimation.interpolate({
